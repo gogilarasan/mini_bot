@@ -1,0 +1,8 @@
+Flask==3.0.3
+Flask-CORS==4.0.1
+nltk==3.8.1
+emoji==2.12.1
+Werkzeug>=3.0.0
+pdfplumber==0.11.2
+python-docx==1.1.2
+transformers==4.43.1
