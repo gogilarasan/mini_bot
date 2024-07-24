@@ -1,0 +1,44 @@
+/* Container for chat messages */
+.chat-message {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: flex-start;
+}
+
+/* User messages alignment */
+.chat-message.user {
+  justify-content: flex-end;
+}
+
+/* Bot messages alignment */
+.chat-message.bot {
+  justify-content: flex-start;
+}
+
+/* Styling for message content */
+.message-content {
+  max-width: 60%;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #333; /* Dark background for message content */
+  color: #e0e0e0; /* Light text color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+/* User message content with different background color */
+.chat-message.user .message-content {
+  background-color: #007bff; /* Primary color for user messages */
+  color: #fff; /* White text color */
+}
+
+/* Bot message content with different background color */
+.chat-message.bot .message-content {
+  background-color: #444; /* Slightly lighter dark background for bot messages */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  .message-content {
+      max-width: 80%; /* Increase max-width on smaller screens */
+  }
+}
